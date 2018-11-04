@@ -1,0 +1,169 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+/* IT SEEMS LIKE YOU CAN CALL IN FONTS FROM THE CSS FILE INSTEAD
+OF THE HTML WAY. TO LOAD THE FONT USE FONT FAM RULE SET BELOW */
+
+body {
+  color: #555;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*---HEADER START---------------------------------------------------*/
+
+#header {
+  background-color: #1abc9c;
+  height: 150px;
+  padding: 10px;
+  line-height: 150px;
+  /*WHY DID WE USE LINE HEIGHT TO POSITION VERTICALY*/
+  /*REMIND YOURSELF OF WHAT LINE HEIGHT DOES*/
+}
+
+#header a {
+  /*NOTICE THE LINE ABOVE TARGETS THE A LINKS IN THE HEADER ONLY */
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  /*ALWAYS DO LETTER SPACING IN EMS */
+}
+
+#header a:hover {
+  /*CREATED ANOTHER HEADER RULE TO ONLY EFFECT THE HOVER STATES OF LINKS */
+  /*a;header is a example of a pseudo class  */
+  /* color: #222; */
+  color: yellow;
+}
+
+#header-title {
+  display: block;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#header-nav {
+  display: block;
+  float: right;
+  margin-top: 0;
+}
+
+#header-nav li {
+  display: inline;
+  /*MAKES THE LIST ITEMS FOLLOW IN A LINE */
+  padding-left: 20px;
+}
+
+.container {
+  /*THE CONTAINER SEEMS TO BE AN INVISIBLE ELEMENT THAT CAN B USED TO HELP LAYOUT*/
+  max-width: 1000px;
+  /*ESTABLISH WIDTH. LOOK IN CONCEPT OF MAX WIDTH */
+  margin: 0 auto;
+  /*THIS IS FOR THE HORIZONTAL POSITIONING OF ELEMENTS*/
+  /*CONTAINER HAS NO MARGINS */
+  /*LOOK INTO CONCEPT OF AUTO. DOES IT MEAN IT ADAPTS?N*/
+}
+/*--HEADER FIN--------------------------------------------------*/
+
+/*--CONTENT START--------------------------------------------------*/
+
+h1, h2, h3, h4 {
+  color: #333;
+/*A GOOD WAY OF TARGETING ALL HEADERS*/
+}
+
+
+P {
+  line-height: 1.5;
+  /* SETS ALL PARAGRAPHS*/
+}
+
+.post, .about {
+  max-width: 800px;
+  /*TARGETS THE POST ELEMENT ONLY*/
+  /*IF U NOTICE WITHIN THE ABOUT HTML THERE IS NO POST CLASS. BUT PLACE COMMA THEN .about THE RULE WILL BE APPLIED*/
+  margin: 0 auto;
+  /*TOP BTM 0. L R ADAPTS TO BROWSER SIZE. GOT IT  */
+  padding: 60px 0;
+  /*TOP BTM 60px space . L R 0 DOES NOT NEED IT */
+}
+
+.post-author img {
+  /*TARGETS IMAGE IN POST-AUTHOR ELEMENT  */
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  /* MAKES ANYTHING ALIGN WITH IT BE VERTICALY IN THE MIDDLE*/
+}
+
+.about-author img {
+  border-radius: 100px;
+/*GHALLENG COMPLETE MAKES IMG A COMPLETE CIRCLE  */
+}
+
+
+.post-author span {
+  margin-left: 16px;
+  /*TARGETS POST-AUTHOR SPAN ELEMENT & gives marging of 16px*/
+}
+
+.post-date {
+  color: #d2d2d2;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.container1 {
+  background-color: #f2f2f2;
+  /* background-color: red; */
+}
+
+
+/*--CONTENT FIN--------------------------------------------------*/
+
+/*--FOOTER START--------------------------------------------------*/
+
+#footer {
+  background-color: #2f2f2f;
+  padding: 50px 0px;
+  /*PADDING TOP BOTTOM, LEFT & RIGHT  */
+}
+
+.column {
+  min-width: 300px;
+  /* THE WIDTH OF THE COLUMNS */
+  display: inline-block;
+  /*DISPLAYS THE COLUMNS SIDE BY SIDE  */
+  /*WHY INLINE? IT LETS BLOCK ELEMENTS KEEP THEIR WIDTH AND height
+  BUT LINES THEM UP IN A ROW*/
+  vertical-align: top;
+  /* USED THE ABOVE LINE TO ALIGN THE TOP OF THE BLOCKS.*/
+  /* SO CONTENT WOULD ALIGN NEXT TO EACH OTHER */
+}
+
+#footer h4 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+#footer p {
+  color: white;
+}
+
+/* #footer a {
+  color: #1abc9c;
+  text-decoration: none;
+} */
+
+a {
+  color: #1abc9c;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f6a623;
+}
+/*--FOOTER FIN--------------------------------------------------*/
